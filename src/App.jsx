@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Formulario from "./components/Formulario"
 import Header from "./components/Header" 
 import ListadoPacientes from "./components/ListadoPacientes"
+import cross from "./image/cross.png"
 
 function App() {
   
@@ -30,7 +31,9 @@ function App() {
 
   return (
     <div className="container mx-auto mt-20">
-        <Header/>
+      <div className='flex justify-between'><img src={cross} width='100'/></div>
+        <Header
+        />
 
         <div className= "mt-12 md:flex">
              <Formulario
