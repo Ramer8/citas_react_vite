@@ -1,12 +1,11 @@
 import { useState, useEffect} from "react"
-import { useContext } from "react/cjs/react.production.min";
 import Error from "./Error"
 
 const Formulario = ({ pacientes,setPacientes,paciente }) => {
 
     const [nombre,setNombre] = useState('');
     const [numerodni,setNumerodni] = useState('');
-    const [nacionalidad,setNacionalidad] = useState();
+    const [nacionalidad,setNacionalidad] = useState('');
     const [sexo,setSexo] = useState('');
     const [profesion,setProfesion] = useState('');
     const [estadocivil,setEstadocivil] = useState('');
